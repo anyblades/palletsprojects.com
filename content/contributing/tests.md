@@ -59,9 +59,17 @@ Tests are generally organized by topic in `test_{topic}.py` files, and within
 each file each test is a `test_{specific}` function. The test function name
 should be unique, somewhat descriptive without being too long.
 
+Do not create a new test file for a single bug fix. Add a parametrization or a
+new test function to an existing, related test file.
+
 Each test should test one thing, using `assert` statements to check expected
 properties of that one thing. If you have multiple test cases, use the
 [`@pytest.mark.parametrize`][parametrize] decorator to run the same test with
 different arguments.
+
+When a test covers many input combinations, prefer a flat parametrize list with
+a simple test body over a complex test body with fewer parameters. A complex
+test body tends to mirror the implementation logic it is supposed to verify,
+which defeats the purpose.
 
 [parametrize]: https://docs.pytest.org/en/stable/how-to/parametrize.html#pytest-mark-parametrize-parametrizing-test-functions

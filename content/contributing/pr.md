@@ -14,6 +14,15 @@ set up your development environment and run tests. This guide assumes you've
 done that and used the GitHub CLI to fork and clone the repository and add the
 upstream remote.
 
+## AI-Generated Contributions
+
+AI-generated PRs and issues are closed on sight, without review or discussion.
+This applies regardless of code quality or correctness.
+
+AI-generated contributions must not be revived, cleaned up, or used as a base
+for further work. Starting a new PR "on top of" a closed AI submission counts
+as laundering and will be treated the same way.
+
 ## Create a Branch
 
 To work on a bug or documentation fix, switch to the `stable` branch (if the
@@ -93,6 +102,24 @@ $ git rebase --continue
 
 See [Help with Git](git.md) for more information about rebasing.
 
+## PR Scope
+
+Keep PRs focused on a single fix or feature. Do not bundle unrelated refactors,
+type annotation changes, or test reorganizations with a bug fix. If a PR touches
+too many concerns at once, it becomes hard to review and will be sent back.
+
+Use consistent wording across the PR title, commit message, changelog entry, and
+docstring `versionchanged` entry. They should all describe the same thing the
+same way.
+
+Squash messy commit chains before merging, or use GitHub's squash-merge. Long
+chains of fixup commits make `git blame` useless.
+
+Chaining PRs that depend on each other is acceptable, as long as each PR
+explicitly states which PR it follows up on and which comes next. Maintainers
+may request the reordering of the merge sequence based on review feedback.
+Rebasing a chain to account for a reorder is expected rework, not a chore.
+
 ## Create the Pull Request
 
 Use the GitHub CLI to start submitting your work as a pull request. Specify the
@@ -149,3 +176,25 @@ Once the PR is merged, the corresponding issue will be closed as well. Both the
 issue and PR will be marked with a milestone indicating the future release
 that will contain it. You can watch a repository's releases to get notified when
 that happens.
+
+## Branch Protection
+
+No direct commits to `main` or `stable` are allowed. All changes must go
+through a pull request so that other maintainers have a chance to review each
+other's work. The only exception is release-related housekeeping: changelog
+initialization, changelog consolidation, workflow fixes, tagging, and
+`stable`/`main` syncs.
+
+## Reviving Closed or Inaccessible PRs
+
+When a human-contributed PR is no longer accessible (which can happen when the
+original author deleted their fork), any maintainer may recreate it from scratch
+or from the `.patch` URL.
+
+A maintainer who revives a closed PR must:
+
+-   State clearly in the new PR body that the work originated from another PR,
+    and link to the original.
+-   Squash the original commits.
+-   Credit the original author with a `Co-Authored-By` trailer in the commit
+    metadata.
