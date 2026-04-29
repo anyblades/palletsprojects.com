@@ -85,6 +85,18 @@ consistent, it's ok that existing docs use alternate spellings.
 [American spelling]: https://www.oxfordinternationalenglish.com/differences-in-british-and-american-spelling/
 [serial comma]: https://www.grammarly.com/blog/punctuation-capitalization/what-is-the-oxford-comma/
 
+## Docstrings and Code Comments
+
+Docstrings on public methods are for users: describe what the function does and
+how to call it. Implementation rationale and historical context belong in code
+comments (`#`) next to the relevant lines, where maintainers will see it.
+
+Do not include GitHub issue or PR numbers or links anywhere in the codebase: not
+in docstrings, not in code comments, not in documentation files. Docs and
+comments must stand on their own. The only place to reference issues or PRs is
+in changelog entries. Links to external projects (like CPython) are acceptable
+when the code works around a reported issue in that project.
+
 ## Translating Docs
 
 Currently, the community is working on translating Flask's documentation. We may
