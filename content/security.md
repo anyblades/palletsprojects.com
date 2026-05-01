@@ -42,6 +42,9 @@ may close it or ask you to report a regular issue instead.
 -   Insecure configuration or code in a project *using* our libraries. This
     should be reported to the relevant project instead. The machine the project
     uses must be assumed to be fully trusted and otherwise secure.
+-   Untrusted input passed to Click CLI applications. Users must follow secure
+    practices when entering commands into a terminal or passing arguments to a
+    command, regardless of what it's implemented in.
 -   Regular expression performance, often referred to as "ReDoS". Deployed
     applications should use standard/recommended resource limits offered by
     their server software and hosting service. You may report this as a regular
