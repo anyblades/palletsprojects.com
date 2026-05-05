@@ -60,13 +60,13 @@ See the following guides for each part:
 
 - [Tests](tests.md) - Add tests that demonstrate that your code works, and
   ensure all tests pass. Run `pytest` to run all tests.
-- [Static Typing](typing.md) - Run `mypy` to check static typing.
+- Static Typing - Run `mypy` to check static typing.
 - [Documentation](docs.md) - If behavior has changed somehow, check if any
   documentation pages or docstrings need to be updated.
-- [Changelog](changes.md) - Adding a change log entry is optional. A maintainer
+- Changelog - Adding a change log entry is optional. A maintainer
   will write one if you're not sure how to. Don't add an entry for changes that
   only affect documentation or tool config.
-- [Style](style.md) - pre-commit automatically applies lint and format checks.
+- Style - pre-commit automatically applies lint and format checks.
 
 ### Multiple Authors
 
@@ -100,7 +100,7 @@ $ git merge --continue
 $ git rebase --continue
 ```
 
-See [Help with Git](git.md) for more information about rebasing.
+See Help with Git for more information about rebasing.
 
 ## PR Scope
 

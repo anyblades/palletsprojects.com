@@ -49,7 +49,7 @@ built on top of them. We also have our own dependencies that we use for our
 to contribute to Pallets.
 
 [ecosystem]: ../ecosystem.md
-[development environment]: layout
+[development environment]: layout.md
 
 Writing code is not the only way to contribute to an open source project. Other
 activities are just as helpful. Some ideas that are too broad for individual
