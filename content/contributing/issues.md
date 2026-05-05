@@ -31,3 +31,5 @@ following information in your post:
     exception.
 -   List the version of Python and the project you're using. Check if this issue
     is already fixed in the latest release, or in `stable` or `main`.
+
+[minimal reproducible example]: https://stackoverflow.com/help/minimal-reproducible-example
