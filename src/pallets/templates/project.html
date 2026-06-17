@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 
+{% block extra_head %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-okaidia.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js" defer></script>
+{% endblock %}
+
 {% block page %}
   <section style="text-align: center;">
     <h1 class="title-replace">{{ page.name }}</h1>

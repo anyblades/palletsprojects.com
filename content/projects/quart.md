@@ -22,7 +22,7 @@ async def greet():
     return 'Hello, World!'
 ```
 
-```
-$ export QUART_APP=hello:app
-$ quart run
+```sh
+export QUART_APP=hello:app
+quart run
 ```
