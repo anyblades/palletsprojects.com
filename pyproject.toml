@@ -26,12 +26,14 @@ dev = [
     "python-dotenv",
     "watchdog",
 ]
+gha-update = [
+    "gha-update ; python_full_version >= '3.12'",
+]
 pre-commit= [
     "pre-commit",
 ]
 typing= [
     "mypy",
-    "pyright",
     "types-beautifulsoup4",
     "types-pygments",
 ]
@@ -102,10 +104,7 @@ commands = [["pre-commit", "run", "--all-files"]]
 
 [tool.tox.env.typing]
 dependency_groups = ["typing"]
-commands = [
-    ["mypy"],
-    ["pyright"]
-]
+commands = [["mypy"]]
 
 [tool.tox.env.update-actions]
 labels = ["update"]
