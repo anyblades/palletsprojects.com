@@ -3,6 +3,9 @@
 Thank you for considering contributing to Pallets! There are many ways to
 contribute to an open source project, see the next section for more ideas.
 
+All contributors and contributions must follow our our
+[Code of Conduct](../code-of-conduct.md) and [LLM and AI Policy](llm-ai.md).
+
 If you would like to ask a question or open an issue or feature request, see
 these guides:
 
