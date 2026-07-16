@@ -14,13 +14,14 @@ set up your development environment and run tests. This guide assumes you've
 done that and used the GitHub CLI to fork and clone the repository and add the
 upstream remote.
 
-## AI-Generated Contributions
+## LLM-Generated Contributions
 
-AI-generated PRs and issues are closed on sight, without review or discussion.
-This applies regardless of code quality or correctness.
+Using LLM or AI tools to generate PRs is not allowed. They are closed on sight,
+without review or discussion. This applies regardless of code quality or
+correctness. See our [LLM and AI Policy](llm-ai.md).
 
-AI-generated contributions must not be revived, cleaned up, or used as a base
-for further work. Starting a new PR "on top of" a closed AI submission counts
+LLM-generated contributions must not be revived, cleaned up, or used as a base
+for further work. Starting a new PR "on top of" a closed LLM submission counts
 as laundering and will be treated the same way.
 
 ## Create a Branch
