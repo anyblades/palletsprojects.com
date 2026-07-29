@@ -51,7 +51,7 @@ may close it or ask you to report a regular issue instead.
     may report this as a regular performance issue instead of a security issue.
 -   Automated reports from vulnerability scanners or "AI" tools. Please make it
     clear that you understand what you are reporting and have put personal time
-    into crafting the report.
+    into crafting the report. See our full [LLM and AI Policy](contributing/llm-ai.md).
 -   Do not report something that has already been fixed and released; check the
     project's change log. Getting a notification from your security scanner that
     you need to update is not itself a new vulnerability to report.
