@@ -27,7 +27,7 @@ Jinja's philosophy is that while application logic belongs in Python if
 possible, it shouldn't make the template designer's job difficult by
 restricting functionality too much.
 
-```jinja2
+```jinja
 {% extends "base.html" %}
 {% block title %}Members{% endblock %}
 {% block content %}
